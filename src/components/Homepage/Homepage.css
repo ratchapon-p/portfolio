@@ -1,12 +1,23 @@
 @keyframes tomainPage {
 }
 
+.intropage{
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+
+}
+
 .homepage-main {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  scroll-snap-align: start;
+
 }
 
 .introduct2me{
@@ -14,6 +25,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
+
 }
 
 .next2page{
@@ -21,6 +34,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
+
 }
 
 .display-text {

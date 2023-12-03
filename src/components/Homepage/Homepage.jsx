@@ -14,38 +14,32 @@ const Homepage = () => {
   // })
 
   return (
-    // <div className="intropage">
-    //   <div className="homepage-main">
-    //     <div className="display-text">
-    //       <h2 id="welcome-typing" className="welcome">
-    //         Hello I'm James.
-    //       </h2>
-    //       <h2 className="underline"> _</h2>
-    //     </div>
+    <div className="intropage">
+      <div className="homepage-main">
+        <div className="display-text">
+          <h2 id="welcome-typing" className="welcome">
+            Hello I'm James.
+          </h2>
+          <h2 className="underline"> _</h2>
+        </div>
 
-    //     <div className="scroll-down">
-    //       Scroll down to view profile
-    //       <ChevronDoubleDownIcon className="scroll-down-icon" />
-    //     </div>
-    //   </div>
+        <div className="scroll-down">
+          Scroll down to view profile
+          <ChevronDoubleDownIcon className="scroll-down-icon" />
+        </div>
+      </div>
 
-    //   <div className="introduct2me">
-    //     <img src={profile} className="intropage-profile" />
-    //     <div className="intropage-description">Me?</div>
-    //   </div>
+      <div className="introduct2me">
+        <img src={profile} className="intropage-profile" />
+        <div className="intropage-description">Me?</div>
+      </div>
 
-    //   <div className="next2page">
-    //     <img src={profile} />
-    //     <div>Me?</div>
-    //   </div>
-    // </div>
-    <div class="container">
-    <div class="section"></div>
-    <div class="section"></div>
-    <div class="section"></div>
-    <div class="section"></div>
-    <div class="section"></div>
-</div>
+      <div className="next2page">
+        <img src={profile} />
+        <div>Me?</div>
+      </div>
+    </div>
+
   );
 };
 
