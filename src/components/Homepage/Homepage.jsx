@@ -5,14 +5,7 @@ import profile from "../../assets/profile.png";
 import post from "../../assets/homepage_pic.png";
 
 const Homepage = () => {
-  const [useScroll, setUseScroll] = useState(false);
-
-  const scrollPage = () => {};
-
-  // useEffect(()=>{
-  //   window.onscroll
-  // })
-
+  
   return (
     <div className="intropage">
       <div className="homepage-main">
