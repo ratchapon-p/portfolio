@@ -1,0 +1,121 @@
+@keyframes tomainPage {
+}
+
+.homepage-main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.introduct2me{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next2page{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-text {
+  display: flex;
+  justify-content: center;
+  transition: 2s;
+}
+
+@keyframes showing {
+  from {
+    color: #d4d4d4;
+    display: none;
+  }
+  to {
+    color: #6b6b6b;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    color: transparent;
+  }
+}
+
+.homepage-main .welcome {
+  font-size: 5em;
+  text-align: center;
+  letter-spacing: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  overflow: hidden;
+  border-top: 0;
+  display: inline-block;
+  animation: typing 2s steps(30);
+}
+
+.underline {
+  font-size: 5em;
+  animation: cursor 0.5s step-end infinite alternate;
+}
+
+.description {
+  font-size: 2em;
+  width: 57%;
+  animation: showing 3s steps(20) 2s;
+}
+
+@keyframes fadeItem {
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    transform: scale(1, 1) translate(0px, 0px);
+  }
+
+  30% {
+    transform: scale(1, 1) translate(0px, 5px);
+  }
+
+  75% {
+    transform: scale(1, 1) translate(0px, -5px);
+  }
+
+  100% {
+    transform: scale(1, 1) translate(0px, 0px);
+  }
+}
+
+.scroll-down {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  animation: fadeItem 0.5s ease-in 2.5s forwards;
+  position: relative;
+  top: 38vh;
+
+}
+
+.scroll-down-icon {
+  padding: 5%;
+  width: 50px;
+  background: none;
+  animation: bounce 1s infinite;
+}
