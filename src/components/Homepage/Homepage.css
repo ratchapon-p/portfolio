@@ -5,8 +5,7 @@
   height: 100vh;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  scroll-behavior: smooth;
-
+  scroll-behavior: 3s smooth;
 
 }
 
@@ -33,10 +32,20 @@
 .next2page{
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     scroll-snap-align: start;
-    flex-direction: column;
+    flex-direction: row;
+
+}
+
+.link-to-another{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  scroll-snap-align: start;
 
 }
 
@@ -169,7 +178,7 @@
   justify-content: center;
   align-items: center;
   padding: 0.8%;
-  background-color: rgb(180, 180, 180);
+  background-color: rgb(112, 112, 112);
   border-radius: 15px;
   cursor: pointer;
   color: white;
@@ -181,6 +190,8 @@
 .icon-item:hover{
   background-color: rgb(255, 255, 255);
   color: black;
+  transition: .8s;
+
 
 }
 
@@ -189,3 +200,108 @@
   padding: 5%;
   background: transparent;
 }
+
+.profile-header{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(56, 56, 56);
+  box-shadow: 0px 0px 4px 1px #474747;
+
+}
+
+.profile-name{
+  background: transparent;
+  padding: 5px 50px;
+  margin-top: 5%;
+
+}
+
+.more-profile{
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  padding-left: 10%;
+  justify-content: start;
+  width: 100%;
+  padding-top: 10%;
+
+}
+
+.header-click{
+  background: transparent;
+  padding: 25% 20px 0 20px;
+  border: none;
+
+}
+
+
+
+.h2-header{
+  background-color: transparent;
+  padding: 5%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.hover-tab{
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.hover-tab:hover{
+  background-color: #272727;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+
+.profile-data{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.question{
+  font-size: 75px;
+  font-weight: 700;
+}
+
+.link-item{
+  margin: 3%;
+  font-weight: 600;
+  width: 50%;
+}
+
+.fixed-text{
+  padding: 5%;
+  max-height: 13vh;
+
+}
+
+.link-text{
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #474747;
+  transition: .8s;
+
+}
+
+.link-text:hover{
+  cursor: pointer;
+  font-size: 80px;
+  transition: .5s;
+  color: #070707;
+
+}
+
+
+

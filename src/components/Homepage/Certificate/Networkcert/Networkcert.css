@@ -1,0 +1,31 @@
+.network-cert-main{
+    padding-top: 2%;
+
+    display: flex;
+    flex-direction: column;
+    background: #2e2e2e;
+    height: 100%;
+}
+
+.network-cert-image{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 10px;
+    max-width: 90%;
+    padding: 10px;
+}
+
+
+
+.cert-image{
+    width: 600px;
+    height: auto;
+    margin: 10px;
+}
+
+.h1-top-cert{
+    color: #f5f5f5;
+    padding: 10px 25px;
+
+}
